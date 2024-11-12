@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Chess</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #444;
+        }
+
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            gap: 1px;
+            margin-top: 20px;
+        }
+
+        .chessboard div {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .white-square {
+            background-color: #f0d9b5;
+        }
+
+        .black-square {
+            background-color: #b58863;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Online Chess</h1>
+
+    <div class="chessboard">
+        <!-- 64 squares of the chessboard -->
+        <!-- Row 1 -->
+        <div class="white-square">♖</div><div class="black-square">♘</div><div class="white-square">♗</div><div class="black-square">♕</div>
+        <div class="white-square">♔</div><div class="black-square">♗</div><div class="white-square">♘</div><div class="black-square">♖</div>
+        <!-- Row 2 -->
+        <div class="black-square">♙</div><div class="white-square">♙</div><div class="black-square">♙</div><div class="white-square">♙</div>
+        <div class="black-square">♙</div><div class="white-square">♙</div><div class="black-square">♙</div><div class="white-square">♙</div>
+        <!-- Row 3 - 6 -->
+        <div class="white-square"></div><div class="black-square"></div><div class="white-square"></div><div class="black-square"></div>
+        <div class="white-square"></div><div class="black-square"></div><div class="white-square"></div><div class="black-square"></div>
+        <div class="black-square"></div><div class="white-square"></div><div class="black-square"></div><div class="white-square"></div>
+        <div class="black-square"></div><div class="white-square"></div><div class="black-square"></div><div class="white-square"></div>
+        <div class="white-square"></div><div class="black-square"></div><div class="white-square"></div><div class="black-square"></div>
+        <div class="white-square"></div><div class="black-square"></div><div class="white-square"></div><div class="black-square"></div>
+        <div class="black-square"></div><div class="white-square"></div><div class="black-square"></div><div class="white-square"></div>
+        <div class="black-square"></div><div class="white-square"></div><div class="black-square"></div><div class="white-square"></div>
+        <!-- Row 7 -->
+        <div class="white-square">♟︎</div><div class="black-square">♟︎</div><div class="white-square">♟︎</div><div class="black-square">♟︎</div>
+        <div class="white-square">♟︎</div><div class="black-square">♟︎</div><div class="white-square">♟︎</div><div class="black-square">♟︎</div>
+        <!-- Row 8 -->
+        <div class="black-square">♜</div><div class="white-square">♞</div><div class="black-square">♝</div><div class="white-square">♛</div>
+        <div class="black-square">♚</div><div class="white-square">♝</div><div class="black-square">♞</div><div class="white-square">♜</div>
+    </div>
+
+    <div class="footer">
+        <p>Enjoy your game! Created by Chess Fanatics</p>
+    </div>
+
+</body>
+</html>
